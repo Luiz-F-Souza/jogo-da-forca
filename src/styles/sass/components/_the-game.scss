@@ -1,0 +1,271 @@
+.container--the-game{
+  height: 100vh;
+  width: 100%;
+ 
+  background-color: rgba(244, 165, 96, 0.773);
+  position: relative;
+  
+  
+
+
+
+  .container--hangman{
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    height: 100vh;
+    .stacks{
+      
+      align-self:end;
+      .position-relative{
+        
+        
+        position: relative;
+        
+        .container--img-and-hangman{
+
+         
+
+          .container--category{
+            position: absolute;
+            top: 12.5%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            .category{
+              text-align: center;
+              font-size: 2rem;
+              font-weight: 400;
+            }
+
+            .extra-tipe{
+              font-size: 2rem;
+              font-weight: 400;
+            }
+          }
+
+          .container--word-to-guess{
+
+            position: absolute;
+            bottom: -7.5%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%,-50%);
+            .word-to-guess{
+              font-size: 5rem;
+              letter-spacing: 1rem;
+              text-align: center;
+            }
+          }
+          
+
+          
+          img{
+            width: 30rem;
+          }
+  
+          .hangman{
+            position: absolute;
+            bottom: 13rem;
+            left: 22.9rem;
+          
+            .hangman--head-and-body{
+      
+              // HEAD
+              &::before{
+                content: "";
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                background-color: black;
+                position: absolute;
+                top: -3rem;
+                left: -1.7rem;
+                z-index: -1;
+              }
+      
+              // BODY
+              &::after{
+                content: "";
+                height: 8rem;
+                width: 6px;
+                background-color: black;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 10px;
+                z-index: -1;
+              }
+              
+            }
+            
+            .hangman--arms{
+              // left
+              &::after{
+                content: "";
+                height: 5rem;
+                width: 6px;
+                background-color: black;
+                position: absolute;
+                top: 2rem;
+                left: -1.6rem;
+                border-radius: 10px;
+                z-index: -1;
+                transform: rotate(45deg);
+              }
+  
+              &::before{
+                content: "";
+                height: 5rem;
+                width: 6px;
+                background-color: black;
+                position: absolute;
+                top: 2rem;
+                right: -2em;
+                border-radius: 10px;
+                z-index: -1;
+                transform: rotate(-45deg);
+              }
+              
+            }
+  
+            .hangman--legs{
+              // left
+              &::after{
+                content: "";
+                height: 5rem;
+                width: 6px;
+                background-color: rgb(0, 0, 0);
+                position: absolute;
+                top: 6.5rem;
+                left: -1.6rem;
+                border-radius: 10px;
+                z-index: -1;
+                transform: rotate(45deg);
+              }
+  
+              &::before{
+                content: "";
+                height: 5rem;
+                width: 6px;
+                background-color: rgb(0, 0, 0);
+                position: absolute;
+                top: 6.5rem;
+                right: -2em;
+                border-radius: 10px;
+                z-index: -1;
+                transform: rotate(-45deg);
+              }
+              
+            }
+           
+          }
+    
+        }
+  
+      }
+  
+  
+    }
+  
+
+
+
+
+
+    .container--keyboard{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 100px );
+      // max-width: 50rem;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+      margin-left: 2rem;
+      gap: 2rem;
+      
+      
+      .keyboard-letter, .text{
+        font-size: 2.2rem;
+        font-weight: 600;
+        text-align: center;
+        background-color: rgba(128, 128, 128, 0.481);
+        padding: 2rem 0;
+        height: 100%;
+        
+        //mixin
+        &:hover{
+          cursor: pointer;
+          transform: scale(1.05);
+        }
+
+        &:active{
+          cursor: pointer;
+          transform: scale(1.0);
+        }
+
+      }
+
+      .btn--extra-tip{
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-align: center;
+        background-color: #B27214;
+        padding: 2rem 0;
+        height: 100%;
+        border: none;
+
+        //mixin
+        &:hover{
+          cursor: pointer;
+          transform: scale(1.05);
+        }
+
+        &:active{
+          cursor: pointer;
+          transform: scale(1.0);
+        }
+      }
+    }
+
+    a{
+      text-align: center;
+    }
+  
+  }
+
+
+
+}
+
+
+// this is to set the inital hangman as not shown.
+.container--the-game{
+  .container--hangman{
+    .stacks{
+      .position-relative{
+        .container--img-and-hangman{
+          .hangman{
+
+
+            .hangman--head-and-body.hidden-6, .hangman--arms.hidden-4, .hangman--legs.hidden-2{
+
+              &::before{
+                width: 0;
+                
+              }
+            }
+    
+            .hangman--head-and-body.hidden-5, .hangman--arms.hidden-3,.hangman--legs.hidden-1{
+              &::after{
+                width: 0;
+              }
+            }
+
+          }
+        }
+      
+      }
+
+    }
+  }
+}
+

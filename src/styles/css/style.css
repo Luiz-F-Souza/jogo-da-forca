@@ -1,0 +1,199 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body, .text {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  z-index: -2 !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.container--the-game {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(244, 165, 96, 0.773);
+  position: relative;
+}
+.container--the-game .container--hangman {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  height: 100vh;
+}
+.container--the-game .container--hangman .stacks {
+  align-self: end;
+}
+.container--the-game .container--hangman .stacks .position-relative {
+  position: relative;
+}
+.container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .container--category {
+  position: absolute;
+  top: 12.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .container--category .category {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .container--category .extra-tipe {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .container--word-to-guess {
+  position: absolute;
+  bottom: -7.5%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .container--word-to-guess .word-to-guess {
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  text-align: center;
+}
+.container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman img {
+  width: 30rem;
+}
+.container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .hangman {
+  position: absolute;
+  bottom: 13rem;
+  left: 22.9rem;
+}
+.container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .hangman .hangman--head-and-body::before {
+  content: "";
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  top: -3rem;
+  left: -1.7rem;
+  z-index: -1;
+}
+.container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .hangman .hangman--head-and-body::after {
+  content: "";
+  height: 8rem;
+  width: 6px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  z-index: -1;
+}
+.container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .hangman .hangman--arms::after {
+  content: "";
+  height: 5rem;
+  width: 6px;
+  background-color: black;
+  position: absolute;
+  top: 2rem;
+  left: -1.6rem;
+  border-radius: 10px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .hangman .hangman--arms::before {
+  content: "";
+  height: 5rem;
+  width: 6px;
+  background-color: black;
+  position: absolute;
+  top: 2rem;
+  right: -2em;
+  border-radius: 10px;
+  z-index: -1;
+  transform: rotate(-45deg);
+}
+.container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .hangman .hangman--legs::after {
+  content: "";
+  height: 5rem;
+  width: 6px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 6.5rem;
+  left: -1.6rem;
+  border-radius: 10px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+.container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .hangman .hangman--legs::before {
+  content: "";
+  height: 5rem;
+  width: 6px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 6.5rem;
+  right: -2em;
+  border-radius: 10px;
+  z-index: -1;
+  transform: rotate(-45deg);
+}
+.container--the-game .container--hangman .container--keyboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin-left: 2rem;
+  gap: 2rem;
+}
+.container--the-game .container--hangman .container--keyboard .keyboard-letter, .container--the-game .container--hangman .container--keyboard .text {
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.481);
+  padding: 2rem 0;
+  height: 100%;
+}
+.container--the-game .container--hangman .container--keyboard .keyboard-letter:hover, .container--the-game .container--hangman .container--keyboard .text:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.container--the-game .container--hangman .container--keyboard .keyboard-letter:active, .container--the-game .container--hangman .container--keyboard .text:active {
+  cursor: pointer;
+  transform: scale(1);
+}
+.container--the-game .container--hangman .container--keyboard .btn--extra-tip {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  background-color: #B27214;
+  padding: 2rem 0;
+  height: 100%;
+  border: none;
+}
+.container--the-game .container--hangman .container--keyboard .btn--extra-tip:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.container--the-game .container--hangman .container--keyboard .btn--extra-tip:active {
+  cursor: pointer;
+  transform: scale(1);
+}
+.container--the-game .container--hangman a {
+  text-align: center;
+}
+
+.container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .hangman .hangman--head-and-body.hidden-6::before, .container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .hangman .hangman--arms.hidden-4::before, .container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .hangman .hangman--legs.hidden-2::before {
+  width: 0;
+}
+.container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .hangman .hangman--head-and-body.hidden-5::after, .container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .hangman .hangman--arms.hidden-3::after, .container--the-game .container--hangman .stacks .position-relative .container--img-and-hangman .hangman .hangman--legs.hidden-1::after {
+  width: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

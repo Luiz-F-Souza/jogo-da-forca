@@ -1,0 +1,64 @@
+[
+  
+    {
+      "level": "Fácil",
+      "category":"Fruta",
+      "word": "Banana",
+      "tip": "Amarela"
+    },
+    
+    {
+      "level": "Fácil",
+      "category":"Objeto",
+      "word": "Jaleco",
+      "tip": "Os médicos usam"
+    },
+
+    {
+      "level": "Fácil",
+      "category":"Animal",
+      "word": "Peixe",
+      "tip": "Nada"
+    },
+
+    {
+      "level": "Médio",
+      "category":"Fruta",
+      "word": "Kiwi",
+      "tip": "Verde"
+    },
+
+    {
+      "level": "Médio",
+      "category":"Objeto",
+      "word": "Nebulizador",
+      "tip": "Ajuda a respirar"
+    },
+
+    {
+      "level": "Médio",
+      "category":"Animal",
+      "word": "Hamster",
+      "tip": "'Rato' de estimação"
+    },
+
+    {
+      "level": "Difícil",
+      "category":"Fruta",
+      "word": "Nêspera",
+      "tip": "Parece uma maçã"
+    },
+    {
+      "level": "Difícil",
+      "category":"Objeto",
+      "word": "Xilofone",
+      "tip": "Instrumento musical muito utilizado com crianças"
+    },
+    {
+      "level": "Difícil",
+      "category":"Animal",
+      "word": "Gnu",
+      "tip": "Parece um boi"
+    }
+
+]
