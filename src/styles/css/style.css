@@ -6,6 +6,10 @@
 
 html {
   font-size: 62.5%;
+  scrollbar-width: thin;
+}
+html ::-webkit-scrollbar {
+  width: 0;
 }
 
 body, .text {
@@ -15,6 +19,7 @@ body, .text {
 
 body {
   z-index: -2 !important;
+  background-color: rgba(244, 165, 96, 0.773);
 }
 
 .hidden {
@@ -24,7 +29,6 @@ body {
 .container--the-game {
   height: 100vh;
   width: 100%;
-  background-color: rgba(244, 165, 96, 0.773);
   position: relative;
 }
 .container--the-game .container--hangman {

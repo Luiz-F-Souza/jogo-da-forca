@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100%;
  
-  background-color: rgba(244, 165, 96, 0.773);
+
   position: relative;
   
   
@@ -191,7 +191,8 @@
         padding: 2rem 0;
         height: 100%;
         
-        //mixin
+        
+        
         &:hover{
           cursor: pointer;
           transform: scale(1.05);
@@ -213,7 +214,7 @@
         height: 100%;
         border: none;
 
-        //mixin
+
         &:hover{
           cursor: pointer;
           transform: scale(1.05);

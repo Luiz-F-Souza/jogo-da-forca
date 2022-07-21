@@ -6,6 +6,20 @@
       "word": "Banana",
       "tip": "Amarela"
     },
+
+    {
+      "level": "Fácil",
+      "category":"Maquiagem",
+      "word": "Batom",
+      "tip": "É pequeno (normalmente)"
+    },
+
+    {
+      "level": "Fácil",
+      "category":"Objeto",
+      "word": "Mochilete",
+      "tip": "Normalmente é utilizada por crianças"
+    },
     
     {
       "level": "Fácil",
@@ -26,6 +40,20 @@
       "category":"Fruta",
       "word": "Kiwi",
       "tip": "Verde"
+    },
+
+    {
+      "level": "Médio",
+      "category":"Objeto",
+      "word": "Hélice",
+      "tip": "O que o ventilador e o helicóptero tem em comum 🙊"
+    },
+
+    {
+      "level": "Médio",
+      "category":"Vestuário",
+      "word": "Bermuda",
+      "tip": "Usada normalmente em dias quentes"
     },
 
     {
@@ -59,6 +87,21 @@
       "category":"Animal",
       "word": "Gnu",
       "tip": "Parece um boi"
+    },
+
+    {
+      "level": "Difícil",
+      "category":"Todos tem",
+      "word": "Hemácias",
+      "tip": "presente no corpo humano"
+    },
+
+    {
+      "level": "Difícil",
+      "category":"Meio de transporte",
+      "word": "Quadriciclo",
+      "tip": "veículo de 4 rodas"
     }
 
 ]
+  
