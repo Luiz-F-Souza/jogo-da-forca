@@ -1,5 +1,8 @@
 # Jogo da Forca
 
+
+![jogo da forca -- vitoria](https://user-images.githubusercontent.com/71572565/180592729-2980f3d5-b07e-49fd-b515-a0fc6042d68b.gif)
+
 ## Regras:
 
   ### 1º O jogador deve ler a categoria da palavra secreta (que se encontra na parte superior da tela)
