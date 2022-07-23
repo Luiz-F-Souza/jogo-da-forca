@@ -224,11 +224,13 @@ function chutar(letra, keyOfKeyboard, wordToCheck = secretWord, maskedWordToRepl
 
 //function to show an extra tip (it costs a life)
 btnTip.addEventListener('click',e =>{
-  tipEl.classList.remove('hidden') //takes the hidden class away from the extra tip
-
-  showingHangmanParts(remainingLifes) // to show the next hangman part
-  remainingLifes-- 
   
+  if(tipEl.classList.contains('hidden')){
+    tipEl.classList.remove('hidden') //takes the hidden class away from the extra tip
+    showingHangmanParts(remainingLifes) // to show the next hangman part
+    remainingLifes-- 
+    if(remainingLifes === 0) return buscarEstado()
+  }
 })
 
 // called as function to then remove the eventListener to the key pressed
